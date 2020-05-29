@@ -1,0 +1,87 @@
+body{
+	
+}
+
+.profile{
+	margin-left:40px;
+	margin-top: 20px;
+	position: absolute; 
+}
+
+.form-group{
+	
+	margin-top: -20px;
+}
+
+.picture{
+	width:240px;
+	height: 260px;
+	position: relative;
+	border: 1px solid 	#FFFAFA;
+	text-align: center;
+    background-color: white;
+    border-radius: 10px;
+	cursor: pointer;
+	box-shadow: 10px red;
+	border:3px solid transparent;
+}
+
+.infos{
+	width: 50%;
+	position: relative;
+	;
+	margin-left: 35%;
+
+	transform: translateY(-1%);
+	height: 100%;
+	
+}
+
+.infos ul li{
+	text-align: left;
+}
+
+
+p{
+	font-size: 20px;
+	font-family: serif;
+	text-align: justify;
+	margin-left: 50px;
+
+
+}
+
+.stats ul li{
+
+float: right;
+	
+
+}
+
+h1{
+	text-decoration: underline;
+}
+
+
+.main{
+	text-align: left;
+}
+.main ul{
+	list-style-type: none;
+
+}
+
+.main ul li{
+	display: inline;
+	
+}
+.main ul li a{
+	text-decoration: none;
+	font-size: 18px;
+	font-family: Impact;
+}
+
+.main ul li a:hover{
+	background-color: seashell;
+	text-decoration: overline;
+}

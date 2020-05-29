@@ -1,0 +1,132 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+body{
+	background-position:center; 
+	background-blend-mode:lighten;
+}
+nav{
+	height: 15vh;
+	width: 100%; 
+	background:#065471;
+	position:absolute;
+}
+i{
+margin-left: 10px;
+}
+
+.logo{
+
+position: absolute;
+transform: translate(20%,0vh);
+}
+.logo img{
+
+	width:100px;
+	height: 15vh;
+}
+.nav-links li a:active {
+	text-decoration: underline;
+}
+nav ul li{
+	display: inline-block;
+	list-style-type: none;
+	height: 15vh;
+	align-items: center;
+	vertical-align: middle;
+	text-align: center;
+
+}
+
+.nav-links{
+	display: flex;
+	list-style: none;
+	width: 50%;  
+	height: 100%;
+	margin-left: auto;
+	justify-content: space-around;
+	align-items: center;
+}
+i{
+	margin-right: 10px;
+}
+.nav-links li a{
+	font-family: "Baloo Thambi 2",cursive;
+	color: #ffc045;
+	text-decoration: none;
+	font-size:20px;
+	font-weight: bolder;
+}
+nav-links li a:active{
+	text-decoration: underline;
+	font-size:16px;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 768px){
+
+	.line{
+		width: 30px;
+		height: 3px;
+		background:white;
+		margin: 5px;
+	}
+	.menu{
+		pointer-events: all;
+		position: absolute;
+		cursor: pointer;
+		right: 5%;
+		top: 5%;
+		transform: translate(-5%,50%);
+		z-index: 4;
+	}
+	.nav-links{
+		z-index: 3;
+		font-weight: bold;
+		position: absolute;
+		background: #065471;
+		height: 100vh;
+		width: 100%;
+		clip-path: circle(100px at 90% -10%);
+		-webkit-clip-path: circle(100px at 90% -10%);
+		flex-direction: column;
+		transition: all 1s ease-out;
+
+	}
+	.nav-links:nth-child(1){
+		transition: 1
+
+	}
+	.nav-links.open{
+		z-index: 3s;
+		clip-path: circle(1000px at 90% -10%);
+		-webkit-clip-path: circle(1000px at 90% -10%);
+		pointer-events: all;
+		overflow: hidden;
+	}
+	}
+}
+.form-div{
+	margin-top: 100px;
+	
+	padding-top: 15px;  
+}
+#add_code_default{
+	display: block;
+	width: 200px;
+	margin:10px auto;
+	border-radius: 70%;
+	height: 200px;
+}
+.btnblock{
+	background: #065471;
+
+}
+
+
+.container{
+	margin:auto;
+	transform: translate(0%,15vh);
+}

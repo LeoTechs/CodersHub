@@ -1,0 +1,172 @@
+body{
+    background: #ececec;
+}
+
+.table{
+    background: white;
+    overflow: scroll;
+}
+
+.th{
+    overflow-wrap: break-word;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+    /* vertical-align: middle; */
+    background-color: #2f78a0;
+}
+
+.tete>:first-child{
+    border-top-left-radius: 5px;
+}
+
+.tete>:last-child{
+    border-top-right-radius: 5px;
+}
+
+.cercle{
+    background: #145233;
+    border: 5px solid #145233;
+    border-radius: 50%;
+    width: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #47d18c;
+}
+
+.tbody>:last-child>:last-child{
+    border-top-right-radius: 5px;
+}
+
+.tbody>:last-child>:first-child{
+    border-bottom: 5px solid green;
+    border-radius: 2px;
+}
+
+.infosPersonne{
+    box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+    height: 100%;
+    /* flex : 0 0 140px; */
+    position: relative;
+    background: #f5f5f5;
+    border: 1px solid #d8d8d8;
+    display : block;
+    /* vertical-align: top; */
+    /* padding: 10px; */
+    text-align: center;
+    /* margin: auto; */
+}
+
+#com_pseudo{
+    display:none;
+}
+
+@media screen and (max-width : 700px){
+    .hidden-sm{
+        display: none;
+    }
+    .infosPersonne{
+        display: none;
+    }
+
+    #com_pseudo{
+        display: block;
+    }
+    .th-categorie{
+        max-width: 50px;
+        width:30px
+    }
+}
+
+.conteneur_image_profil{
+    height: 8vw;
+    width: 8vw;
+    font-size: 58px;
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.image_profil{
+    border: 2px solid #718093;
+    border-radius: inherit;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: normal;
+    height: 100%;
+    width: 100%;
+    display: block;
+    max-width: 100%;
+}
+
+/* .dl{
+    margin: 10px;
+}
+
+.dt{
+    text-align: left;
+    min-width: 100%;
+    color: #8c8c8c;
+}
+
+.dd{
+    text-align: right;
+    min-width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width : 1000px){
+    .dl{
+        display : none;
+    }
+} */
+
+.contenu_commentaire{
+    box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+    /* height: 100%; */
+    height: inherit;
+    /* flex : 0 0 140px; */
+    position: relative;
+    background: #f5f5f5;
+    border: 1px solid #d8d8d8;
+    display : block;
+    /* vertical-align: top; */
+    /* padding: 10px; */
+    /* text-align: center; */
+}
+
+.tete_commentaire{
+    width: 103.5%;
+    background-color: #2f78a0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size : 12px;
+    text-align: right;
+    padding-right: 5px
+}
+
+#bord_forum{
+    width: 24%;
+    background: rgba(119, 94, 94, 20%);
+    border-radius: 20px;
+    height: min-content;
+    border: 5px solid rgba(119, 94, 94, 20%);
+}
+
+.pouce_bleu_pas_encore{
+    color:black;
+}
+
+.pouce_bleu_pas_encore:hover{
+    color:blue;
+}
+
+.pouce_bleu_deja{
+    color : blue;
+    font-weight: bold;
+}
+
+.pouce_bleu_deja:hover{
+    text-decoration: underline;
+}
